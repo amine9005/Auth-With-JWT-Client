@@ -7,7 +7,7 @@ import { userSate } from './redux/user.types';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'Inventory Manager';
+  title = 'Auth System';
   constructor(
     private store: Store<{
       user: userSate;
