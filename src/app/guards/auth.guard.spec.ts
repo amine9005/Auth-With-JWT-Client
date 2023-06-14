@@ -1,7 +1,7 @@
-import { AuthGuard } from './auth.guard';
+// import { AuthGuard } from './auth.guard';
 
 describe('AuthGuard', () => {
-  let fixture: AuthGuard;
+  // let fixture: AuthGuard;
 
   beforeEach(() => {
     //  fixture = new AuthGuard();
