@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.store.select('user').subscribe((data) => {
       this.isLoggedIn = data.isLoggedIn;
-      console.log('isLoggedIn: ' + this.isLoggedIn);
+      // console.log('isLoggedIn: ' + this.isLoggedIn);
     });
   }
 }

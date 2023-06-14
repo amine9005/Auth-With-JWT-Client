@@ -32,7 +32,7 @@ export class AuthGuard implements CanActivate {
     | UrlTree {
     this.store.select('user').subscribe((data) => {
       this.isLoggedIn = data.isLoggedIn;
-      console.log('from guard isLoggedIn: ' + this.isLoggedIn);
+      // console.log('from guard isLoggedIn: ' + this.isLoggedIn);
     });
 
     if (!this.isLoggedIn) {
