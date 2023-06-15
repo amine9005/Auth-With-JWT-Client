@@ -21,12 +21,12 @@ export class LoginComponent implements OnInit {
       authService
         .login(this.validateForm.value.email, this.validateForm.value.password)
         .then((resp) => {
-          console.log('resp: ' + resp);
+          // console.log('resp: ' + resp);
           this.store.dispatch(
             loggedIn({ isLoggedIn: true, token: resp.data.accessToken })
           );
           this.invalid = false;
-          this.router.navigate(['']);
+          this.router.navigate(['/']);
         })
         .catch((err) => {
           console.log('error', err);
