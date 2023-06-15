@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
             loggedIn({ isLoggedIn: true, token: resp.data.accessToken })
           );
           this.invalid = false;
-          this.router.navigate(['/']);
+          this.router.navigate(['']);
         })
         .catch((err) => {
           console.log('error', err);

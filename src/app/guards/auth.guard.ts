@@ -39,6 +39,7 @@ export class AuthGuard implements CanActivate {
       authService
         .refresh()
         .then((resp) => {
+          // console.log('accessToken: ' + JSON.stringify(resp.data.accessToken));
           this.store.dispatch(
             loggedIn({ isLoggedIn: true, token: resp.data.accessToken })
           );
