@@ -1,6 +1,6 @@
 # Auth System UI
 
-<h2>Live at :👉https://mean-auth-with-jwt.onrender.com/</h2>
+<h2>Live at :👉https://auth-system-ui.web.app</h2>
 
 <h3>Technologies:</h3>
 ✅Angular

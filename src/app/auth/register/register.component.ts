@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
   validateForm!: FormGroup;
+  maxDate = new Date();
 
   submitForm(): void {
     if (this.validateForm.valid) {
