@@ -16,7 +16,7 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     component: DashboardComponent,
   },
-  { path: '**', canActivate: [AuthGuard], component: PageNotFoundComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
